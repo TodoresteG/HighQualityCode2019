@@ -1,0 +1,11 @@
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.exe
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.deps.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.runtimeconfig.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.runtimeconfig.dev.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\bin\Debug\netcoreapp3.0\04AbstractFactory.pdb
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\obj\Debug\netcoreapp3.0\04AbstractFactory.csprojAssemblyReference.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\obj\Debug\netcoreapp3.0\04AbstractFactory.AssemblyInfoInputs.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\obj\Debug\netcoreapp3.0\04AbstractFactory.AssemblyInfo.cs
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\obj\Debug\netcoreapp3.0\04AbstractFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\04AbstractFactory\obj\Debug\netcoreapp3.0\04AbstractFactory.pdb

@@ -1,0 +1,11 @@
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.exe
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.deps.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.runtimeconfig.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.runtimeconfig.dev.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\bin\Debug\netcoreapp3.0\031FactoryMethod.pdb
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\obj\Debug\netcoreapp3.0\031FactoryMethod.csprojAssemblyReference.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\obj\Debug\netcoreapp3.0\031FactoryMethod.AssemblyInfoInputs.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\obj\Debug\netcoreapp3.0\031FactoryMethod.AssemblyInfo.cs
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\obj\Debug\netcoreapp3.0\031FactoryMethod.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\031FactoryMethod\obj\Debug\netcoreapp3.0\031FactoryMethod.pdb

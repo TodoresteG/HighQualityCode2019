@@ -1,0 +1,11 @@
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\obj\Debug\netcoreapp3.0\05Builder.csprojAssemblyReference.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\obj\Debug\netcoreapp3.0\05Builder.AssemblyInfoInputs.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\obj\Debug\netcoreapp3.0\05Builder.AssemblyInfo.cs
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.exe
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.deps.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.runtimeconfig.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.runtimeconfig.dev.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\bin\Debug\netcoreapp3.0\05Builder.pdb
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\obj\Debug\netcoreapp3.0\05Builder.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\05Builder\obj\Debug\netcoreapp3.0\05Builder.pdb

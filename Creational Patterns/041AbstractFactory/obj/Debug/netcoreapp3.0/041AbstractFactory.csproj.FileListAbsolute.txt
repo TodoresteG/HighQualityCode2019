@@ -1,0 +1,10 @@
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.exe
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.deps.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.runtimeconfig.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.runtimeconfig.dev.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\bin\Debug\netcoreapp3.0\041AbstractFactory.pdb
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\obj\Debug\netcoreapp3.0\041AbstractFactory.AssemblyInfoInputs.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\obj\Debug\netcoreapp3.0\041AbstractFactory.AssemblyInfo.cs
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\obj\Debug\netcoreapp3.0\041AbstractFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\041AbstractFactory\obj\Debug\netcoreapp3.0\041AbstractFactory.pdb

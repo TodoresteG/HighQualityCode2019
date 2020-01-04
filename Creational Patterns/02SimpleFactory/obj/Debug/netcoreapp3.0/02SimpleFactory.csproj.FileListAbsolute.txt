@@ -1,0 +1,11 @@
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.exe
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.deps.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.runtimeconfig.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.runtimeconfig.dev.json
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\bin\Debug\netcoreapp3.0\02SimpleFactory.pdb
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\obj\Debug\netcoreapp3.0\02SimpleFactory.csprojAssemblyReference.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\obj\Debug\netcoreapp3.0\02SimpleFactory.AssemblyInfoInputs.cache
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\obj\Debug\netcoreapp3.0\02SimpleFactory.AssemblyInfo.cs
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\obj\Debug\netcoreapp3.0\02SimpleFactory.dll
+C:\Users\Todor\Desktop\SoftUni\C# High Quality Code\Design Patterns\Creational Patterns\CreationalPatternsDemo\02SimpleFactory\obj\Debug\netcoreapp3.0\02SimpleFactory.pdb
