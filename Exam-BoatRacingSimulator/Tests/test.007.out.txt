@@ -1,0 +1,15 @@
+Displacement must be a positive integer.
+Engine model Shark with 100 HP and displacement 250 cm3 created successfully.
+Oars must be a positive integer.
+Cargo Weight must be a positive integer.
+Yacht with model Correct registered successfully.
+Sail boat with model Lightweight registered successfully.
+Row boat with model Rowfast registered successfully.
+Distance must be a positive integer.
+A new race with distance 2000 meters, wind speed 27 m/s and ocean current speed 200 m/s has been set.
+Boat with model Correct has signed up for the current Race.
+Boat with model Rowfast has signed up for the current Race.
+Boat with model Lightweight has signed up for the current Race.
+First place: RowBoat Model: Rowfast Time: 2.67 sec
+Second place: Yacht Model: Correct Time: 13.33 sec
+Third place: SailBoat Model: Lightweight Time: 16.29 sec

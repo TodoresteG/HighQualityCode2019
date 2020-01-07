@@ -1,0 +1,13 @@
+Engine model SI01 with 80 HP and displacement 125 cm3 created successfully.
+Engine model SI02 with 120 HP and displacement 150 cm3 created successfully.
+Engine model SY01 with 300 HP and displacement 450 cm3 created successfully.
+Row boat with model RW1000 registered successfully.
+Yacht with model Luxury102 registered successfully.
+Sail boat with model SailMasters12 registered successfully.
+A new race with distance 2200 meters, wind speed 90 m/s and ocean current speed 4 m/s has been set.
+Boat with model SailMasters12 has signed up for the current Race.
+Boat with model RW1000 has signed up for the current Race.
+Boat with model Luxury102 has signed up for the current Race.
+First place: Yacht Model: Luxury102 Time: 4.87 sec
+Second place: RowBoat Model: RW1000 Time: 16.42 sec
+Third place: SailBoat Model: SailMasters12 Time: Did not finish!

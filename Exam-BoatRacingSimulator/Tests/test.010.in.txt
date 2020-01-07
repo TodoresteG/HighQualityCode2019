@@ -1,0 +1,12 @@
+CreateBoatEngine\Engine600\100\100\Jet
+CreateSailBoat\Sail1\100\50
+CreateYacht\Yacht1\50\Engine600\50
+CreateRowBoat\Rowboat1\100\6
+CreateBoatEngine\Engine100\10\30\Sterndrive
+CreatePowerBoat\Power1\200\Engine100\Engine600
+OpenRace\1000000\-500\-10000\true
+SignUpBoat\Yacht1
+SignUpBoat\Sail1
+SignUpBoat\Rowboat1
+SignUpBoat\Power1
+StartRace

@@ -1,0 +1,11 @@
+CreateBoatEngine\Break\7\7\Sterndrive
+CreateSailBoat\WindSurf\200\20
+CreateRowBoat\Canoe\550\2
+CreateYacht\SeaVoyage\1000\Break\250
+CreateRowBoat\Sunken2\999\3
+OpenRace\10000\0\0\true
+SignUpBoat\Sunken2
+SignUpBoat\WindSurf
+SignUpBoat\SeaVoyage
+SignUpBoat\Canoe
+StartRace

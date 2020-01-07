@@ -1,0 +1,13 @@
+CreateBoatEngine\Whale\100\0\Jet
+CreateBoatEngine\Shark\100\250\Jet
+CreateRowBoat\NoPaddles\120\-20
+CreateYacht\WrongCargo\500\Shark\-1000
+CreateYacht\Correct\500\Shark\200
+CreateSailBoat\Lightweight\1\88
+CreateRowBoat\Rowfast\450\10
+OpenRace\0\27\200\false
+OpenRace\2000\27\200\true
+SignUpBoat\Correct
+SignUpBoat\Rowfast
+SignUpBoat\Lightweight
+StartRace

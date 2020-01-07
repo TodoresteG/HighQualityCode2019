@@ -1,0 +1,14 @@
+Engine model Engine600 with 100 HP and displacement 100 cm3 created successfully.
+Sail boat with model Sail1 registered successfully.
+Yacht with model Yacht1 registered successfully.
+Row boat with model Rowboat1 registered successfully.
+Engine model Engine100 with 10 HP and displacement 30 cm3 created successfully.
+Power boat with model Power1 registered successfully.
+A new race with distance 1000000 meters, wind speed -500 m/s and ocean current speed -10000 m/s has been set.
+Boat with model Yacht1 has signed up for the current Race.
+Boat with model Sail1 has signed up for the current Race.
+Boat with model Rowboat1 has signed up for the current Race.
+Boat with model Power1 has signed up for the current Race.
+First place: Yacht Model: Yacht1 Time: Did not finish!
+Second place: SailBoat Model: Sail1 Time: Did not finish!
+Third place: RowBoat Model: Rowboat1 Time: Did not finish!

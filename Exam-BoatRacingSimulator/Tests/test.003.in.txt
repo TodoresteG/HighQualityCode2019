@@ -1,0 +1,14 @@
+CreateBoatEngine\JET1\187\80\Jet
+CreateBoatEngine\STRN1\215\120\Sterndrive
+CreateBoatEngine\HELifter12\700\1050\Jet
+CreateSailBoat\WindSurf\30\20
+CreateRowBoat\Canoe\55\2
+CreateYacht\SeaVoyage\3900\HELifter12\550
+CreatePowerBoat\Lightning111\500\JET1\STRN1
+CreateSailBoat\WindSurf2\20\99
+CreateRowBoat\Sunken\666\1
+OpenRace\10000\100\50\true
+SignUpBoat\SeaVoyage
+SignUpBoat\Lightning111
+SignUpBoat\Sunken
+StartRace

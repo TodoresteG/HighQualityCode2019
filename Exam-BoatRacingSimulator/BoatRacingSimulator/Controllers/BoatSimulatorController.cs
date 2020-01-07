@@ -124,6 +124,7 @@
             this.ValidateRaceIsSet();
 
             var participants = this.CurrentRace.GetParticipants();
+            var testParticipants = this.CurrentRace.GetParticipants().ToList();
 
             if (participants.Count < 3)
             {
@@ -139,9 +140,13 @@
             var third = this.FindFastest(participants);
             participants.Remove(third.Value);
 
-            if (this.GetFinalResultForParticipant(first) == this.GetFinalResultForParticipant(second))
+            if (this.GetFinalResultForParticipant(first) == "Did not finish!" &&
+                this.GetFinalResultForParticipant(second) == "Did not finish!" &&
+                this.GetFinalResultForParticipant(third) == "Did not finish!")
             {
-
+                first = new KeyValuePair<double, IBoat>(first.Key, testParticipants[0]);
+                second = new KeyValuePair<double, IBoat>(second.Key, testParticipants[1]);
+                third = new KeyValuePair<double, IBoat>(third.Key, testParticipants[2]);
             }
 
             var result = new StringBuilder();
@@ -212,6 +217,7 @@
             double bestTimeNegative = double.MinValue;
 
             IBoat winner = null;
+            IBoat slowestWinner = null;
 
             foreach (var participant in participants)
             {
@@ -227,7 +233,7 @@
                 else if (time > bestTimeNegative && time < 0)
                 {
                     bestTimeNegative = time;
-                    winner = participant;
+                    slowestWinner = participant;
                 }
                 else if (participants.Count == 1)
                 {
@@ -239,6 +245,7 @@
             if (bestTime == double.MaxValue)
             {
                 bestTime = bestTimeNegative;
+                winner = slowestWinner;
             }
 
             return new KeyValuePair<double, IBoat>(bestTime, winner);
@@ -246,7 +253,7 @@
 
         private string GetFinalResultForParticipant(KeyValuePair<double, IBoat> participant) 
         {
-            return participant.Key < 0 ? "Did not finish!" : participant.Key.ToString("0.00") + " sec";
+            return participant.Key < 0 || Double.IsInfinity(participant.Key) ? "Did not finish!" : participant.Key.ToString("0.00") + " sec";
         }
 
         private void ValidateRaceIsSet()

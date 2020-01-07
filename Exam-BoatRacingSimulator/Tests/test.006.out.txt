@@ -1,0 +1,7 @@
+Horsepower must be a positive integer.
+Sail Effectiveness must be between [1...100].
+Weight must be a positive integer.
+Row boat with model Canoe registered successfully.
+A new race with distance 100 meters, wind speed 10 m/s and ocean current speed 5 m/s has been set.
+Boat with model Canoe has signed up for the current Race.
+Not enough contestants for the race.

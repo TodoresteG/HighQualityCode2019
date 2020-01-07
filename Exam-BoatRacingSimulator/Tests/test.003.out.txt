@@ -1,0 +1,16 @@
+Engine model JET1 with 187 HP and displacement 80 cm3 created successfully.
+Engine model STRN1 with 215 HP and displacement 120 cm3 created successfully.
+Engine model HELifter12 with 700 HP and displacement 1050 cm3 created successfully.
+Sail boat with model WindSurf registered successfully.
+Row boat with model Canoe registered successfully.
+Yacht with model SeaVoyage registered successfully.
+Power boat with model Lightning111 registered successfully.
+Sail boat with model WindSurf2 registered successfully.
+Row boat with model Sunken registered successfully.
+A new race with distance 10000 meters, wind speed 100 m/s and ocean current speed 50 m/s has been set.
+Boat with model SeaVoyage has signed up for the current Race.
+Boat with model Lightning111 has signed up for the current Race.
+Boat with model Sunken has signed up for the current Race.
+First place: PowerBoat Model: Lightning111 Time: 4.65 sec
+Second place: Yacht Model: SeaVoyage Time: 80.00 sec
+Third place: RowBoat Model: Sunken Time: Did not finish!

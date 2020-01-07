@@ -1,0 +1,30 @@
+Displacement must be a positive integer.
+Engine model Shark with 500 HP and displacement 250 cm3 created successfully.
+Sail boat with model Sail1 registered successfully.
+Yacht with model Yacht1 registered successfully.
+Row boat with model Rowboat1 registered successfully.
+Row boat with model Slow1 registered successfully.
+A new race with distance 2100 meters, wind speed 2100 m/s and ocean current speed 200 m/s has been set.
+Boat with model Yacht1 has signed up for the current Race.
+Boat with model Sail1 has signed up for the current Race.
+Boat with model Rowboat1 has signed up for the current Race.
+Boat with model Slow1 has signed up for the current Race.
+First place: Yacht Model: Yacht1 Time: 1.00 sec
+Second place: SailBoat Model: Sail1 Time: 1.00 sec
+Third place: RowBoat Model: Rowboat1 Time: 1.00 sec
+A new race with distance 2100 meters, wind speed 0 m/s and ocean current speed 201 m/s has been set.
+Boat with model Yacht1 has signed up for the current Race.
+Boat with model Sail1 has signed up for the current Race.
+Boat with model Rowboat1 has signed up for the current Race.
+Boat with model Slow1 has signed up for the current Race.
+First place: RowBoat Model: Rowboat1 Time: 1.00 sec
+Second place: Yacht Model: Yacht1 Time: 1.00 sec
+Third place: RowBoat Model: Slow1 Time: 2100.00 sec
+A new race with distance 2100 meters, wind speed 2000 m/s and ocean current speed 200 m/s has been set.
+The specified boat does not meet the race constraints.
+Boat with model Sail1 has signed up for the current Race.
+Boat with model Rowboat1 has signed up for the current Race.
+Boat with model Slow1 has signed up for the current Race.
+First place: RowBoat Model: Rowboat1 Time: 1.00 sec
+Second place: SailBoat Model: Sail1 Time: 1.05 sec
+Third place: RowBoat Model: Slow1 Time: Did not finish!

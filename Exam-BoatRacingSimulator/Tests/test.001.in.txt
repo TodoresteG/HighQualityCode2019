@@ -1,0 +1,11 @@
+CreateBoatEngine\SI01\80\125\Sterndrive
+CreateBoatEngine\SI02\120\150\Sterndrive
+CreateBoatEngine\SY01\300\450\Sterndrive
+CreateRowBoat\RW1000\170\3
+CreateYacht\Luxury102\1900\SY01\200
+CreateSailBoat\SailMasters12\113\95
+OpenRace\2200\90\4\true
+SignUpBoat\SailMasters12
+SignUpBoat\RW1000
+SignUpBoat\Luxury102
+StartRace

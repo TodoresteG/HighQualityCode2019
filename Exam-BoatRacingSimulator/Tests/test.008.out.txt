@@ -1,0 +1,41 @@
+Engine model Shark with 100 HP and displacement 250 cm3 created successfully.
+Engine model Thunder with 80 HP and displacement 150 cm3 created successfully.
+Yacht with model Correct registered successfully.
+Sail boat with model Lightweight registered successfully.
+Row boat with model Rowfast registered successfully.
+Power boat with model Thunder registered successfully.
+A new race with distance 2000 meters, wind speed 27 m/s and ocean current speed 200 m/s has been set.
+The specified boat does not meet the race constraints.
+Boat with model Rowfast has signed up for the current Race.
+Boat with model Lightweight has signed up for the current Race.
+The specified boat does not meet the race constraints.
+Not enough contestants for the race.
+Row boat with model Rower registered successfully.
+Boat with model Rower has signed up for the current Race.
+The current race has already been set.
+First place: RowBoat Model: Rower Time: 4.24 sec
+Second place: SailBoat Model: Lightweight Time: 16.29 sec
+Third place: RowBoat Model: Rowfast Time: Did not finish!
+A new race with distance 1000 meters, wind speed 50 m/s and ocean current speed 251 m/s has been set.
+Engine model Perfect with 170 HP and displacement 100 cm3 created successfully.
+Engine model Perfect2 with 180 HP and displacement 90 cm3 created successfully.
+Power boat with model Thunder2 registered successfully.
+Yacht with model SeaJourney registered successfully.
+Sail boat with model WindTunnel registered successfully.
+The specified boat does not meet the race constraints.
+The specified boat does not meet the race constraints.
+Boat with model WindTunnel has signed up for the current Race.
+Boat with model Rower has signed up for the current Race.
+Boat with model Rowfast has signed up for the current Race.
+First place: RowBoat Model: Rower Time: 1.91 sec
+Second place: SailBoat Model: WindTunnel Time: 8.30 sec
+Third place: RowBoat Model: Rowfast Time: 1000.00 sec
+A new race with distance 1000 meters, wind speed 50 m/s and ocean current speed 50 m/s has been set.
+Boat with model Thunder2 has signed up for the current Race.
+Boat with model SeaJourney has signed up for the current Race.
+Boat with model WindTunnel has signed up for the current Race.
+Boat with model Rower has signed up for the current Race.
+Boat with model Rowfast has signed up for the current Race.
+First place: PowerBoat Model: Thunder2 Time: 0.54 sec
+Second place: RowBoat Model: Rower Time: 3.11 sec
+Third place: SailBoat Model: WindTunnel Time: 50.00 sec

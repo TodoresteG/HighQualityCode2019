@@ -1,0 +1,13 @@
+Engine model Break with 7 HP and displacement 7 cm3 created successfully.
+Sail boat with model WindSurf registered successfully.
+Row boat with model Canoe registered successfully.
+Yacht with model SeaVoyage registered successfully.
+Row boat with model Sunken2 registered successfully.
+A new race with distance 10000 meters, wind speed 0 m/s and ocean current speed 0 m/s has been set.
+Boat with model Sunken2 has signed up for the current Race.
+Boat with model WindSurf has signed up for the current Race.
+Boat with model SeaVoyage has signed up for the current Race.
+Boat with model Canoe has signed up for the current Race.
+First place: RowBoat Model: Sunken2 Time: Did not finish!
+Second place: SailBoat Model: WindSurf Time: Did not finish!
+Third place: Yacht Model: SeaVoyage Time: Did not finish!

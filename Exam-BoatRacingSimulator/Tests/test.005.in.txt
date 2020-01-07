@@ -1,0 +1,6 @@
+CreateBoatEngine\Sh\15\15\Sterndrive
+CreateSailBoat\Wind\100\100
+CreateRowBoat\Canoe\100\5
+CreateRowBoat\S\100\20
+OpenRace\10000\0\0\true
+SignUpBoat\Canoe

@@ -1,0 +1,7 @@
+CreateBoatEngine\Whale\-15\150\Sterndrive
+CreateSailBoat\WindTurbine\10\101
+CreateRowBoat\Canoe\0\5
+CreateRowBoat\Canoe\80\2
+OpenRace\100\10\5\true
+SignUpBoat\Canoe
+StartRace

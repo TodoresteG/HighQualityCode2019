@@ -1,0 +1,6 @@
+Model's name must be at least 3 symbols long.
+Model's name must be at least 5 symbols long.
+Row boat with model Canoe registered successfully.
+Model's name must be at least 5 symbols long.
+A new race with distance 10000 meters, wind speed 0 m/s and ocean current speed 0 m/s has been set.
+Boat with model Canoe has signed up for the current Race.
