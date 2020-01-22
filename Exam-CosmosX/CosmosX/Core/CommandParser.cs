@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using CosmosX.Core.Contracts;
-
-namespace CosmosX.Core
+﻿namespace CosmosX.Core
 {
+    using Contracts;
+
+    using System;
+    using System.Linq;
+    using System.Reflection;
+    using System.Collections.Generic;
+
     public class CommandParser : ICommandParser
     {
         private const string CommandNameSuffix = "Command";
@@ -17,27 +20,16 @@ namespace CosmosX.Core
 
         public string Parse(IList<string> arguments)
         {
-            string command = arguments[0] + CommandNameSuffix;
+            string command = arguments[0];
 
             string[] commandArguments = arguments.Skip(1).ToArray();
 
-            string result = string.Empty;
+            var method = this.reactorManager
+                .GetType()
+                .GetMethods()
+                .FirstOrDefault(m => m.Name == command + CommandNameSuffix);
 
-            switch (command)
-            {
-                case "Reactor" + CommandNameSuffix:
-                    result = this.reactorManager.ReactorCommand(commandArguments);
-                    break;
-                case "Module" + CommandNameSuffix:
-                    result = this.reactorManager.ModuleCommand(commandArguments);
-                    break;
-                case "Report" + CommandNameSuffix:
-                    result = this.reactorManager.ReportCommand(commandArguments);
-                    break;
-                case "Exit" + CommandNameSuffix:
-                    result = this.reactorManager.ExitCommand(commandArguments);
-                    break;
-            }
+            string result = (string)method.Invoke(this.reactorManager, new object[] { commandArguments });
 
             return result;
         }

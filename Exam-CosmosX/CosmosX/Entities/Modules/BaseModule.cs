@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.Modules.Contracts;
-
-namespace CosmosX.Entities.Modules
+﻿namespace CosmosX.Entities.Modules
 {
+    using Contracts;
+
     public abstract class BaseModule : IModule
     {
         protected BaseModule(int id)

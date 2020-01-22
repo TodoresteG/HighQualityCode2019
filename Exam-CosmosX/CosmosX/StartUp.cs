@@ -1,10 +1,10 @@
-﻿using CosmosX.Core;
-using CosmosX.Core.Contracts;
-using CosmosX.IO;
-using CosmosX.IO.Contracts;
-
-namespace CosmosX
+﻿namespace CosmosX
 {
+    using Core;
+    using Core.Contracts;
+    using IO;
+    using IO.Contracts;
+
     public class StartUp
     {
         public static void Main()

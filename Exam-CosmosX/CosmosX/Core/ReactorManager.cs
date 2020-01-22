@@ -1,31 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CosmosX.Core.Contracts;
-using CosmosX.Entities.CommonContracts;
-using CosmosX.Entities.Containers;
-using CosmosX.Entities.Containers.Contracts;
-using CosmosX.Entities.Modules.Absorbing;
-using CosmosX.Entities.Modules.Absorbing.Contracts;
-using CosmosX.Entities.Modules.Contracts;
-using CosmosX.Entities.Modules.Energy;
-using CosmosX.Entities.Modules.Energy.Contracts;
-using CosmosX.Entities.Modules.Factories;
-using CosmosX.Entities.Reactors;
-using CosmosX.Entities.Reactors.Contracts;
-using CosmosX.Entities.Reactors.ReactorFactory;
-using CosmosX.Entities.Reactors.ReactorFactory.Contracts;
-using CosmosX.Utils;
-
-namespace CosmosX.Core
+﻿namespace CosmosX.Core
 {
+    using Contracts;
+    using Entities.CommonContracts;
+    using Entities.Containers;
+    using Entities.Containers.Contracts;
+    using Entities.Modules.Contracts;
+    using Entities.Modules.Energy.Contracts;
+    using Entities.Modules.Absorbing.Contracts;
+    using Entities.Reactors;
+    using Entities.Reactors.Contracts;
+    using Entities.Reactors.ReactorFactory;
+    using Entities.Reactors.ReactorFactory.Contracts;
+    using Entities.Modules.ModuleFactory;
+    using Entities.Modules.ModuleFactory.Contracts;
+    using Utils;
+
+    using System;
+    using System.Linq;
+    using System.Collections.Generic;
+
     public class ReactorManager : IManager
     {
         private int currentId;
         private readonly IDictionary<int, IIdentifiable> identifiableObjects;
         private readonly IDictionary<int, IReactor> reactors;
         private readonly IDictionary<int, IModule> modules;
+
         private readonly IReactorFactory reactorFactory;
         private readonly IModuleFactory moduleFactory;
 
@@ -35,6 +35,7 @@ namespace CosmosX.Core
             this.identifiableObjects = new Dictionary<int, IIdentifiable>();
             this.reactors = new Dictionary<int, IReactor>();
             this.modules = new Dictionary<int, IModule>();
+
             this.reactorFactory = new ReactorFactory();
             this.moduleFactory = new ModuleFactory();
         }
@@ -47,16 +48,14 @@ namespace CosmosX.Core
 
             IContainer container = new ModuleContainer(moduleCapacity);
 
-            IReactor reactor =
-                this.reactorFactory.CreateReactor(reactorType, this.currentId, container, additionalParameter);
-
-            this.reactors.Add(reactor.Id, reactor);
-
-            this.identifiableObjects.Add(reactor.Id, reactor);
+            IReactor reactor = this.reactorFactory.CreateReactor(reactorType, this.currentId, container, additionalParameter);
 
             this.currentId++;
 
-            string result = string.Format(Constants.ReactorCreateMessage, reactor.Id, reactorType);
+            this.reactors.Add(reactor.Id, reactor);
+            this.identifiableObjects.Add(reactor.Id, reactor);
+
+            string result = string.Format(Constants.ReactorCreateMessage, reactorType, reactor.Id);
             return result;
         }
 
@@ -68,25 +67,21 @@ namespace CosmosX.Core
 
             IModule module = this.moduleFactory.CreateModule(moduleType, this.currentId, additionalParameter);
 
-            IReactor reactor = this.reactors[reactorId];
-
-            IAbsorbingModule absorbing = module as IAbsorbingModule;
-
-            if (absorbing != null)
+            if (moduleType == "CryogenRod")
             {
-                reactor.AddAbsorbingModule(absorbing);
+                this.reactors[reactorId].AddEnergyModule((IEnergyModule)module);
             }
             else
             {
-                reactor.AddEnergyModule((IEnergyModule)module);
+                this.reactors[reactorId].AddAbsorbingModule((IAbsorbingModule)module);
             }
 
-            this.modules.Add(this.currentId, module);
-            this.identifiableObjects.Add(this.currentId, module);
+            this.identifiableObjects.Add(module.Id, module);
+            this.modules.Add(module.Id, module);
 
             this.currentId++;
 
-            string result = string.Format(Constants.ModuleCreateMessage, moduleType, module.Id, reactor.Id);
+            string result = string.Format(Constants.ModuleCreateMessage, moduleType, module.Id, reactorId);
             return result;
         }
 
@@ -94,18 +89,9 @@ namespace CosmosX.Core
         {
             int id = int.Parse(arguments[0]);
 
-            if (this.reactors.ContainsKey(id))
-            {
-                IReactor reactor = this.reactors[id];
+            var entityToReport = this.identifiableObjects[id];
 
-                return reactor.ToString();
-            }
-            else
-            {
-                IModule module = this.modules[id];
-
-                return module.ToString();
-            }
+            return entityToReport.ToString();
         }
 
         public string ExitCommand(IList<string> arguments)
@@ -120,11 +106,11 @@ namespace CosmosX.Core
 
             long energyModulesCount = this.modules
                 .Values
-                .Count(x => x.GetType().BaseType.Name == nameof(BaseEnergyModule));
+                .Count(m => m is IEnergyModule);
 
             long absorbingModulesCount = this.modules
                 .Values
-                .Count(m => m.GetType().BaseType.Name == nameof(BaseAbsorbingModule));
+                .Count(m => m is IAbsorbingModule);
 
             long totalEnergyOutput = this.reactors
                 .Values
@@ -134,11 +120,11 @@ namespace CosmosX.Core
                 .Values
                 .Sum(r => r.TotalHeatAbsorbing);
 
-            string result = $"Cryo Reactors: {cryoReactorCount}\n" +
-                            $"Heat Reactors: {heatReactorCount}\n" +
-                            $"Energy Modules: {energyModulesCount}\n" +
-                            $"Absorbing Modules: {absorbingModulesCount}\n" +
-                            $"Total Energy Output: {totalEnergyOutput}\n" +
+            string result = $"Cryo Reactors: {cryoReactorCount}" + Environment.NewLine +
+                            $"Heat Reactors: {heatReactorCount}" + Environment.NewLine +
+                            $"Energy Modules: {energyModulesCount}" + Environment.NewLine +
+                            $"Absorbing Modules: {absorbingModulesCount}" + Environment.NewLine +
+                            $"Total Energy Output: {totalEnergyOutput}" + Environment.NewLine +
                             $"Total Heat Absorbing: {totalHeatAbsorbing}";
 
             return result;

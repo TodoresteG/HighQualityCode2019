@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.Containers.Contracts;
-
-namespace CosmosX.Entities.Reactors
+﻿namespace CosmosX.Entities.Reactors
 {
+    using Containers.Contracts;
+
     public class CryoReactor : BaseReactor
     {
         public CryoReactor(int id, IContainer moduleContainer, int cryoProductionIndex)

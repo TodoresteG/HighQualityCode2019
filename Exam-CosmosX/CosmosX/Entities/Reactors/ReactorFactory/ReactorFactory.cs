@@ -1,12 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-using CosmosX.Entities.Containers.Contracts;
-using CosmosX.Entities.Reactors.Contracts;
-using CosmosX.Entities.Reactors.ReactorFactory.Contracts;
-
-namespace CosmosX.Entities.Reactors.ReactorFactory
+﻿namespace CosmosX.Entities.Reactors.ReactorFactory
 {
+    using Contracts;
+    using Containers.Contracts;
+    using Reactors.Contracts;
+
+    using System;
+    using System.Linq;
+    using System.Reflection;
+
     public class ReactorFactory : IReactorFactory
     {
         private const string ReactorSuffix = "Reactor";
@@ -16,14 +17,15 @@ namespace CosmosX.Entities.Reactors.ReactorFactory
             var reactorType = Assembly
                 .GetCallingAssembly()
                 .GetTypes()
-                .FirstOrDefault(x => x.Name == reactorTypeName + ReactorSuffix);
+                .FirstOrDefault(rt => rt.Name == reactorTypeName + ReactorSuffix);
 
-            if (reactorType == null)
+            var reactor = Activator
+                .CreateInstance(reactorType, new object[] { id, moduleContainer, additionalParameter }) as IReactor;
+
+            if (reactor == null)
             {
-                throw new ArgumentException("Reactor type is not supported!");
+                throw new ArgumentException($"Given reactor - {reactorTypeName} is not supported");
             }
-
-            IReactor reactor = (IReactor)Activator.CreateInstance(reactorType, id, moduleContainer, additionalParameter);
 
             return reactor;
         }

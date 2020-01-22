@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CosmosX.Entities.Containers.Contracts;
-using CosmosX.Entities.Modules.Absorbing.Contracts;
-using CosmosX.Entities.Modules.Contracts;
-using CosmosX.Entities.Modules.Energy.Contracts;
-
-namespace CosmosX.Entities.Containers
+﻿namespace CosmosX.Entities.Containers
 {
+    using Containers.Contracts;
+    using Modules.Absorbing.Contracts;
+    using Modules.Contracts;
+    using Modules.Energy.Contracts;
+
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class ModuleContainer : IContainer
     {
         private int moduleCapacity;

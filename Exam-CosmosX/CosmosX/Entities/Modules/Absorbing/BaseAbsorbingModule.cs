@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.Modules.Absorbing.Contracts;
-
-namespace CosmosX.Entities.Modules.Absorbing
+﻿namespace CosmosX.Entities.Modules.Absorbing
 {
+    using Contracts;
+
     public abstract class BaseAbsorbingModule : BaseModule, IAbsorbingModule
     {
         protected BaseAbsorbingModule(int id, int heatAbsorbing)

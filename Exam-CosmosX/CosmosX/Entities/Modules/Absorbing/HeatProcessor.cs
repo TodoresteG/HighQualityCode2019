@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CosmosX.Entities.Modules.Absorbing
+﻿namespace CosmosX.Entities.Modules.Absorbing
 {
-    public class HeatProcessor : BaseAbsorbingModule
+    using Contracts;
+
+    public class HeatProcessor : BaseAbsorbingModule, IAbsorbingModule
     {
-        public HeatProcessor(int id, int heatAbsorbing) : base(id, heatAbsorbing)
+        public HeatProcessor(int id, int heatAbsorbing) 
+            : base(id, heatAbsorbing)
         {
         }
     }

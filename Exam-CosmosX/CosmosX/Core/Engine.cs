@@ -1,9 +1,12 @@
-﻿using System;
-using CosmosX.Core.Contracts;
-using CosmosX.IO.Contracts;
-
-namespace CosmosX.Core
+﻿namespace CosmosX.Core
 {
+    using Contracts;
+    using IO.Contracts;
+    using Utils;
+
+    using System;
+    using System.Collections.Generic;
+
     public class Engine : IEngine
     {
         private IReader reader;
@@ -21,24 +24,29 @@ namespace CosmosX.Core
 
         public void Run()
         {
-            while (isRunning != true)
+            this.isRunning = true;
+
+            var commandResults = new List<string>();
+
+            while (this.isRunning)
             {
-                string[] tokens = this.reader.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-                if (tokens[0] == "Exit")
-                {
-                    isRunning = true;
-                }
-
                 try
                 {
-                    string result = this.commandParser.Parse(tokens);
+                    var commandLine = this.reader.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-                    this.writer.WriteLine(result);
+                    var result = this.commandParser.Parse(commandLine);
+
+                    commandResults.Add(result);
+
+                    if (commandLine[0] == Constants.ExitCommand)
+                    {
+                        this.isRunning = false;
+                        commandResults.ForEach(r => this.writer.WriteLine(r));
+                    }
                 }
-                catch (ArgumentException ex)
+                catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    this.writer.WriteLine(ex.Message);
                 }
             }
         }

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace CosmosX.Core.Contracts
+﻿namespace CosmosX.Core.Contracts
 {
+    using System.Collections.Generic;
+
     public interface IManager
     {
         string ReactorCommand(IList<string> arguments);

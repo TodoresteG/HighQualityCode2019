@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
-using CosmosX.Entities.Modules.Absorbing.Contracts;
-using CosmosX.Entities.Modules.Contracts;
-using CosmosX.Entities.Modules.Energy.Contracts;
-
-namespace CosmosX.Entities.Containers.Contracts
+﻿namespace CosmosX.Entities.Containers.Contracts
 {
+    using Modules.Absorbing.Contracts;
+    using Modules.Contracts;
+    using Modules.Energy.Contracts;
+
+    using System.Collections.Generic;
+
     public interface IContainer
     {
         long TotalEnergyOutput { get; }

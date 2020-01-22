@@ -1,8 +1,9 @@
-﻿using System;
-using CosmosX.IO.Contracts;
-
-namespace CosmosX.IO
+﻿namespace CosmosX.IO
 {
+    using Contracts;
+
+    using System;
+
     public class ConsoleReader : IReader
     {
         public string ReadLine()

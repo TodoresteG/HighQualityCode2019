@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.Containers.Contracts;
-
-namespace CosmosX.Entities.Reactors
+﻿namespace CosmosX.Entities.Reactors
 {
+    using Containers.Contracts;
+
     public class HeatReactor : BaseReactor
     {
         public HeatReactor(int id, IContainer moduleContainer, int heatReductionIndex)
@@ -10,24 +10,22 @@ namespace CosmosX.Entities.Reactors
             this.HeatReductionIndex = heatReductionIndex;
         }
 
-        public int HeatReductionIndex { get;}
+        public int HeatReductionIndex { get; }
 
-       
+        public override long TotalHeatAbsorbing
+                     => base.TotalHeatAbsorbing + this.HeatReductionIndex;
+
         public override long TotalEnergyOutput
         {
             get
             {
-                //TODO don't know what to do here
-                if (this.TotalHeatAbsorbing < base.TotalEnergyOutput)
+                if (base.TotalEnergyOutput > this.TotalHeatAbsorbing)
                 {
-                    return  0;
+                    return 0;
                 }
 
                 return base.TotalEnergyOutput;
             }
         }
-
-        public override long TotalHeatAbsorbing 
-            => base.TotalHeatAbsorbing + this.HeatReductionIndex;
     }
 }

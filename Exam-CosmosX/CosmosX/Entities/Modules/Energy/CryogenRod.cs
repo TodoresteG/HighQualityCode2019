@@ -1,10 +1,12 @@
 ﻿namespace CosmosX.Entities.Modules.Energy
 {
-    public class CryogenRod : BaseEnergyModule
-    {
-        public CryogenRod(int id, int energyOutput) : base(id, energyOutput)
-        {
+    using Contracts;
 
+    public class CryogenRod : BaseEnergyModule, IEnergyModule 
+    {
+        public CryogenRod(int id, int energyOutput)
+            : base(id, energyOutput) 
+        {
         }
     }
 }

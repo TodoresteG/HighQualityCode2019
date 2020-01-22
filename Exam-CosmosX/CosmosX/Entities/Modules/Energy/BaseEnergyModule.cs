@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.Modules.Energy.Contracts;
-
-namespace CosmosX.Entities.Modules.Energy
+﻿namespace CosmosX.Entities.Modules.Energy
 {
+    using Contracts;
+
     public abstract class BaseEnergyModule : BaseModule, IEnergyModule
     {
         protected BaseEnergyModule(int id, int energyOutput)

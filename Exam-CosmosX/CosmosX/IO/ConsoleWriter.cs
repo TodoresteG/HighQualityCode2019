@@ -1,9 +1,9 @@
-﻿using System;
-using System.IO;
-using CosmosX.IO.Contracts;
-
-namespace CosmosX.IO
+﻿namespace CosmosX.IO
 {
+    using Contracts;
+
+    using System;
+
     public class ConsoleWriter : IWriter
     {
         public void WriteLine(string output)

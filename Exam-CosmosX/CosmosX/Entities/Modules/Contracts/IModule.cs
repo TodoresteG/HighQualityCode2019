@@ -1,7 +1,7 @@
-﻿using CosmosX.Entities.CommonContracts;
-
-namespace CosmosX.Entities.Modules.Contracts
+﻿namespace CosmosX.Entities.Modules.Contracts
 {
+    using CommonContracts;
+
     public interface IModule : IIdentifiable
     {
 

@@ -1,12 +1,12 @@
-﻿using System.Linq;
-using System.Reflection;
-using CosmosX.Entities.Containers.Contracts;
-using CosmosX.Entities.Modules.Absorbing.Contracts;
-using CosmosX.Entities.Modules.Energy.Contracts;
-using CosmosX.Entities.Reactors.Contracts;
-
-namespace CosmosX.Entities.Reactors
+﻿namespace CosmosX.Entities.Reactors
 {
+    using Contracts;
+    using Containers.Contracts;
+    using Modules.Absorbing.Contracts;
+    using Modules.Energy.Contracts;
+
+    using System;
+
     public abstract class BaseReactor : IReactor
     {
         private readonly IContainer moduleContainer;
@@ -17,16 +17,15 @@ namespace CosmosX.Entities.Reactors
             this.moduleContainer = moduleContainer;
         }
 
-        //TODO not sure about Id
         public int Id { get; private set; }
 
-        public virtual long TotalEnergyOutput
+        public virtual long TotalEnergyOutput 
             => this.moduleContainer.TotalEnergyOutput;
 
-        public virtual long TotalHeatAbsorbing
+        public virtual long TotalHeatAbsorbing 
             => this.moduleContainer.TotalHeatAbsorbing;
 
-        public int ModuleCount
+        public int ModuleCount 
             => this.moduleContainer.ModulesByInput.Count;
 
         public void AddEnergyModule(IEnergyModule energyModule)
@@ -41,9 +40,9 @@ namespace CosmosX.Entities.Reactors
 
         public override string ToString()
         {
-            string result = $"{this.GetType().Name} - {this.Id}\n" +
-                            $"Energy Output: {this.TotalEnergyOutput}\n" +
-                            $"Heat Absorbing: {this.TotalHeatAbsorbing}\n" +
+            string result = $"{this.GetType().Name} - {this.Id}" + Environment.NewLine +
+                            $"Energy Output: {this.TotalEnergyOutput}" + Environment.NewLine +
+                            $"Heat Absorbing: {this.TotalHeatAbsorbing}" + Environment.NewLine +
                             $"Modules: {this.ModuleCount}";
 
             return result;
